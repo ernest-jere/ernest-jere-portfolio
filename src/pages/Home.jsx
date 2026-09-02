@@ -11,7 +11,7 @@ import { Footer } from "@/components/Footer";
 export const Home = () => {
     return (
         /* FIXED: changed text-forground to text-foreground, and overflow-hidden to overflow-x-hidden */
-        <div className="min-h-screen bg-background text-foreground overflow-x-hidden"> 
+        <div id="home" className="min-h-screen bg-background text-foreground overflow-x-hidden"> 
             <ThemeToggle />
             <BackgroundAnimations />
             <NavBar />

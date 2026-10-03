@@ -3,11 +3,11 @@ import { ExternalLink } from "lucide-react";
 const project = [
   {
     id: 1,
-    title: "FreeCodeCamp Data Visualizations",
-    Description: "A collection of data visualization dashboards featuring choropleth, heat maps, scatterplots, treemaps, and bar charts built using D3.js and React.",
-    image: "/projects/Data Visualization.png",
-    url: "https://codepen.io/your-work",
-    tag: ["Html", "Css", "JavaScript", "D3.js"]
+    title: "Crypto Prices Tracker",
+    Description: "A real-time cryptocurrency dashboard featuring a responsive 7-day historical price chart, live token statistics, and automated API-driven data syncing.",
+    image: "/projects/Crypto Tracker.png",
+    url: "https://crypto-price-website-six.vercel.app/",
+    tag: ["Html", "Css", "ReactJS", "Vite", "Recharts"]
   },
   {
     id: 2,
@@ -48,16 +48,7 @@ const project = [
   "image": "/projects/SOP Book Cover.png",
   "url": "https://drive.google.com/file/d/1MyWsPTN7L5kTyuy8eayYy5PgG5MqwebH/view?usp=sharing",
   "tag": ["InDesign", "Print Design", "Cover Layout", "Technical Editorial"]
-  },
-  {
-    id: 3,
-    title: "Crypto Prices Tracker",
-    Description: "A real-time cryptocurrency dashboard featuring a responsive 7-day historical price chart, live token statistics, and automated API-driven data syncing.",
-    image: "/projects/Crypto Tracker.png",
-    url: "https://crypto-price-website-six.vercel.app/",
-    tag: ["Html", "Css", "ReactJS", "Vite", "Recharts"]
-  } 
-
+  }
 ];
 
 export const Projects = () => {

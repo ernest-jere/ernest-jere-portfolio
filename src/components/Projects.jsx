@@ -48,6 +48,14 @@ const project = [
   "image": "/projects/SOP Book Cover.png",
   "url": "https://drive.google.com/file/d/1MyWsPTN7L5kTyuy8eayYy5PgG5MqwebH/view?usp=sharing",
   "tag": ["InDesign", "Print Design", "Cover Layout", "Technical Editorial"]
+  },
+  {
+    id: 3,
+    title: "Crypto Prices Tracker",
+    Description: "A real-time cryptocurrency dashboard featuring a responsive 7-day historical price chart, live token statistics, and automated API-driven data syncing.",
+    image: "/projects/Crypto Tracker.png",
+    url: "https://crypto-price-website-six.vercel.app/",
+    tag: ["Html", "Css", "ReactJS", "Vite", "Recharts"]
   } 
 
 ];

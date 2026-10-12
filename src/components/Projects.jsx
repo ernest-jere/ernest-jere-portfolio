@@ -42,21 +42,21 @@ const project = [
     tag: ["InDesign", "Print Design", "Layout", "Technical Editorial"] 
   },
   {
-  "id": 6,
-  "title": "Standard Work Procedures Book Cover Layout",
-  "Description": "A professional full-bleed book cover designed in Adobe InDesign for a technical printing industry manual, featuring structured typography, a precise multi-panel print layout, and automated spine text alignment.",
-  "image": "/projects/SOP Book Cover.png",
-  "url": "https://drive.google.com/file/d/1MyWsPTN7L5kTyuy8eayYy5PgG5MqwebH/view?usp=sharing",
-  "tag": ["InDesign", "Print Design", "Cover Layout", "Technical Editorial"]
+    id: 6,
+    title: "Standard Work Procedures Book Cover Layout",
+    Description: "A professional full-bleed book cover designed in Adobe InDesign for a technical printing industry manual, featuring structured typography, a precise multi-panel print layout, and automated spine text alignment.",
+    image: "/projects/SOP Book Cover.png",
+    url: "https://drive.google.com/file/d/1MyWsPTN7L5kTyuy8eayYy5PgG5MqwebH/view?usp=sharing",
+    tag: ["InDesign", "Print Design", "Cover Layout", "Technical Editorial"]
   },
   {
-  "id": 7,
-  "title": "Impressions Autonomous Storefront Platform",
-  "description": "A high-performance full-stack web application featuring an automated ZAR print pricing matrix switcher, background process routing (Digital/UV vs. Litho/Screen), integrated Cloudinary signatureless API file uploads, and a built-in localStorage client lead tracker workspace dashboard.",
-  "image": "/projects/Impressions.png",
-  "url": "https://design-print-shop.vercel.app/",
-  "tags": ["React Frontend", "Tailwind v4", "Vite 8", "Automated Pricing", "Full-Stack Dev"]
-}
+    id: 7,
+    title: "Impressions Autonomous Storefront Platform",
+    Description: "A high-performance full-stack web application featuring an automated ZAR print pricing matrix switcher, background process routing (Digital/UV vs. Litho/Screen), integrated Cloudinary signatureless API file uploads, and a built-in localStorage client lead tracker workspace dashboard.",
+    image: "/projects/Impressions.png",
+    url: "https://design-print-shop.vercel.app/",
+    tag: ["React Frontend", "Tailwind v4", "Vite 8", "Automated Pricing", "Full-Stack Dev"]
+  }
 ];
 
 export const Projects = () => {

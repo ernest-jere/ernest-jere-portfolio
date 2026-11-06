@@ -19,11 +19,11 @@ const project = [
   },
   {
     id: 3,
-    title: "Invest Portfolio Fintech App Prototype",
+    title: "Invest Portfolio Fintech Prototype",
     Description: "A mobile-first investment application tracking cash assets, stock recommendations, and real-time portfolio performance tracking for top market equities.",
     image: "/projects/Stock Investiment App.png",
     url: "https://www.figma.com/proto/uxlO9aNtkP77XavfqRRIXA/Stock-Ivestiment-App?node-id=2-2&t=aV7fTnuipcH8YAVT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2",
-    tag: ["Figma", "HIFI Prototype"]
+    tag: ["Figma", "HIFI Prototype", "UX/UI Design"]
   },
   {
     id: 4, 
@@ -56,7 +56,25 @@ const project = [
     image: "/projects/Impressions.png",
     url: "https://design-print-shop.vercel.app/",
     tag: ["React Frontend", "Tailwind v4", "Vite 8", "Automated Pricing", "Full-Stack Dev"]
+  },
+  {
+    id: 8,
+    title: "StoreHouse Food Delivery Prototype",
+    Description: "A vibrant, mobile-first food delivery application featuring custom visual branding, an interactive menu catalog, detailed spice/portion customization cards, and a seamless checkout confirmation flow.",
+    image: "/projects/Storehouse.png",
+    url: "https://www.figma.com/proto/jduPg8DbrCNQgYeFY03sn1/Food-Delivery-App?node-id=5-23&t=0ryoMxGtiyGiBR1D-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
+    tag: ["Figma", "HIFI Prototype", "UX/UI Design"]
+  },
+  {
+    id: 9,
+    title: "Base360 Omnichannel Landing Page Prototype",
+    Description: "A world-class e-commerce and corporate light-mode landing page design tracking an end-to-end AI agent automation flow—from public social media comments to CRM lead conversion and automated voice outreach.",
+    image: "/projects/Base360.png",
+    url: "https://www.figma.com/proto/iJTiuqFZKkx0rjbqtMMoAz/BASE360-Landing-Page?node-id=8-66&t=gMuRoEePJo4CRnPS-1&scaling=scale-down&content-scaling=fixed&page-id=8%3A65&starting-point-node-id=8%3A66",
+    tag: ["Figma", "HIFI Prototype", "UX/UI Flow", "Bento Grid", "Product Strategy"]
   }
+
+
 ];
 
 export const Projects = () => {

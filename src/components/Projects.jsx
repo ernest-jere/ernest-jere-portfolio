@@ -26,6 +26,24 @@ const project = [
     tag: ["Figma", "HIFI Prototype", "UX/UI Design"]
   },
   {
+  id: 10,
+  title: "InvestTrack Ticker & Crypto Asset Dashboard",
+  Description: "A full-stack, data-reactive production financial app bridging the design-to-code gap using custom Node.js automation to parse Figma Studio variables into native Tailwind CSS v4 @theme tokens. Features an asynchronous multi-market fetching grid (Yahoo Finance & CoinGecko REST APIs) supporting ZAR/USD live conversions, persistent local storage, interactive line/area charts, and an automated terminal deployment script configuration.",
+  image: "/projects/InvestTrack.png", // Matches your existing project image asset path
+  url: "https://stock-investment-app-mrh1.vercel.app/", // Your live Vercel production URL storefront
+  tag: [
+    "ReactJS", 
+    "Tailwind CSS v4", 
+    "Vite", 
+    "Figma Variables", 
+    "W3C Design Tokens", 
+    "Node.js Automation", 
+    "REST APIs", 
+    "Recharts", 
+    "GitHub Actions"
+    ]
+  },
+  {
     id: 4, 
     title: "Fintech App Work Breakdown Structure", 
     Description: "An interactive FigJam workspace detailing the user flows, feature roadmaps, and agile work breakdown structure for the investment application.", 
@@ -73,8 +91,6 @@ const project = [
     url: "https://www.figma.com/proto/iJTiuqFZKkx0rjbqtMMoAz/BASE360-Landing-Page?node-id=8-66&t=gMuRoEePJo4CRnPS-1&scaling=scale-down&content-scaling=fixed&page-id=8%3A65&starting-point-node-id=8%3A66",
     tag: ["Figma", "HIFI Prototype", "UX/UI Flow", "Bento Grid", "Product Strategy"]
   }
-
-
 ];
 
 export const Projects = () => {

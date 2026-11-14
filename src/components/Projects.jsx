@@ -1,127 +1,146 @@
+import React, { useState } from "react";
 import { ExternalLink } from "lucide-react";
+
+const CATEGORIES = ["All", "Full-Stack", "UX/UI Design", "Print Design"];
 
 const project = [
   {
     id: 1,
     title: "Crypto Prices Tracker",
+    category: "Full-Stack",
     Description: "A real-time cryptocurrency dashboard featuring a responsive 7-day historical price chart, live token statistics, and automated API-driven data syncing.",
     image: "/projects/Crypto Tracker.png",
-    url: "https://crypto-price-website-six.vercel.app/",
+    url: "https://crypto-price-website-six.vercel.app/",    
     tag: ["Html", "Css", "ReactJS", "Vite", "Recharts"]
   },
   {
     id: 2,
     title: "StoreHouse E-Commerce Store",
+    category: "Full-Stack",
     Description: "A fully functional online shopping front-end application featuring product listings, detailed item views, and intuitive 'Add to Cart' functionality.",
     image: "/projects/E-commerce App.png",
-    url: "https://ecommerce-website-ernest-jere1.vercel.app",
+    url: "https://ecommerce-website-ernest-jere1.vercel.app",    
     tag: ["Html", "Css", "ReactJS", "Tailwind"]
   },
   {
     id: 3,
-    title: "Invest Portfolio Fintech Prototype",
-    Description: "A mobile-first investment application tracking cash assets, stock recommendations, and real-time portfolio performance tracking for top market equities.",
-    image: "/projects/Stock Investiment App.png",
-    url: "https://www.figma.com/proto/uxlO9aNtkP77XavfqRRIXA/Stock-Ivestiment-App?node-id=2-2&t=aV7fTnuipcH8YAVT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2",
-    tag: ["Figma", "HIFI Prototype", "UX/UI Design"]
-  },
-  {
-  id: 10,
-  title: "InvestTrack Ticker & Crypto Asset Dashboard",
-  Description: "A full-stack, data-reactive production financial app bridging the design-to-code gap using custom Node.js automation to parse Figma Studio variables into native Tailwind CSS v4 @theme tokens. Features an asynchronous multi-market fetching grid (Yahoo Finance & CoinGecko REST APIs) supporting ZAR/USD live conversions, persistent local storage, interactive line/area charts, and an automated terminal deployment script configuration.",
-  image: "/projects/InvestTrack.png", // Matches your existing project image asset path
-  url: "https://stock-investment-app-mrh1.vercel.app/", // Your live Vercel production URL storefront
-  tag: [
-    "ReactJS", 
-    "Tailwind CSS v4", 
-    "Vite", 
-    "Figma Variables", 
-    "W3C Design Tokens", 
-    "Node.js Automation", 
-    "REST APIs", 
-    "Recharts", 
-    "GitHub Actions"
+    title: "InvestTrack: End-to-End Fintech UX/UI & Live Equity Dashboard",
+    category: "Full-Stack",
+    Description: "An end-to-end product design and full-stack engineering showcase bridging UX/UI strategy and production code. Starts from agile FigJam work breakdown structures and high-fidelity mobile prototypes in Figma, culminating in a Node.js automation pipeline that compiles Figma design variables into Tailwind CSS v4 @theme tokens. Streams live NYSE and JSE ADR market quotes via Finnhub REST API with USD/ZAR conversion, live market hours status, weighted Beta risk scoring, Sector Allocation analytics, a 7-day net worth chart, and CSV exports.",
+    image: "/projects/InvestTrack.png",
+    url: "https://stock-investment-app-mrh1.vercel.app/",
+    links: [
+      { label: "Live App", url: "https://stock-investment-app-mrh1.vercel.app/", },
+      {label: "Figma Prototype", url: "https://www.figma.com/proto/uxlO9aNtkP77XavfqRRIXA/Stock-Ivestiment-App?node-id=42-31&t=EJzK9XqFgrkYjqnv-1&scaling=scale-down&content-scaling=fixed&page-id=16%3A177&starting-point-node-id=42%3A31" },
+      { label: "FigJam WBS", url: "https://www.figma.com/board/whEPukfBAWv2O2Rn4yChRh/Stocks-Figjam?node-id=0-1&t=JapqsjIrpypuKNGY-1" },
+      { label: "tokens.json", url: "https://github.com/ernest-jere/stock-investment-app/blob/main/design-tokens.tokens.json" }
+    ],
+    tag: [
+      "ReactJS",
+      "Tailwind CSS v4",
+      "Figma Variables",
+      "UX/UI & FigJam",
+      "Node.js Automation",
+      "Finnhub API",
+      "Recharts",
+      "Vercel"
     ]
   },
   {
-    id: 4, 
-    title: "Fintech App Work Breakdown Structure", 
-    Description: "An interactive FigJam workspace detailing the user flows, feature roadmaps, and agile work breakdown structure for the investment application.", 
-    image: "/projects/Stocks Figjam.png", 
-    url: "https://www.figma.com/board/whEPukfBAWv2O2Rn4yChRh/Stocks-Figjam?node-id=0-1&t=JapqsjIrpypuKNGY-1", 
-    tag: ["Figma", "FigJam", "UX/UI Flow"] 
+    id: 4,
+    title: "EcooGraphix Industrial Trifold Brochure",
+    category: "Print Design",
+    Description: "A professional 6-panel technical product brochure designed in Adobe InDesign for a global print-packaging supplier, featuring complex data tables, geographic distribution maps, and print-ready prepress layouts.",
+    image: "/projects/EcooGraphix Brochure.png",
+    url: "https://drive.google.com/file/d/1Z3vSJ6h9XHStd6F3zUn7ba00edoQ2leK/view?usp=sharing",
+    tag: ["InDesign", "Print Design", "Layout", "Technical Editorial"]
   },
   {
-    id: 5, 
-    title: "EcooGraphix Industrial Trifold Brochure", 
-    Description: "A professional 6-panel technical product brochure designed in Adobe InDesign for a global print-packaging supplier, featuring complex data tables, geographic distribution maps, and print-ready prepress layouts.", 
-    image: "/projects/EcooGraphix Brochure.png", 
-    url: "https://drive.google.com/file/d/1Z3vSJ6h9XHStd6F3zUn7ba00edoQ2leK/view?usp=sharing", 
-    tag: ["InDesign", "Print Design", "Layout", "Technical Editorial"] 
-  },
-  {
-    id: 6,
+    id: 5,
     title: "Standard Work Procedures Book Cover Layout",
+    category: "Print Design",
     Description: "A professional full-bleed book cover designed in Adobe InDesign for a technical printing industry manual, featuring structured typography, a precise multi-panel print layout, and automated spine text alignment.",
     image: "/projects/SOP Book Cover.png",
     url: "https://drive.google.com/file/d/1MyWsPTN7L5kTyuy8eayYy5PgG5MqwebH/view?usp=sharing",
     tag: ["InDesign", "Print Design", "Cover Layout", "Technical Editorial"]
   },
   {
-    id: 7,
+    id: 6,
     title: "Impressions Autonomous Storefront Platform",
+    category: "Full-Stack",
     Description: "A high-performance full-stack web application featuring an automated ZAR print pricing matrix switcher, background process routing (Digital/UV vs. Litho/Screen), integrated Cloudinary signatureless API file uploads, and a built-in localStorage client lead tracker workspace dashboard.",
     image: "/projects/Impressions.png",
     url: "https://design-print-shop.vercel.app/",
     tag: ["React Frontend", "Tailwind v4", "Vite 8", "Automated Pricing", "Full-Stack Dev"]
   },
   {
-    id: 8,
+    id: 7,
     title: "StoreHouse Food Delivery Prototype",
+    category: "UX/UI Design",
     Description: "A vibrant, mobile-first food delivery application featuring custom visual branding, an interactive menu catalog, detailed spice/portion customization cards, and a seamless checkout confirmation flow.",
     image: "/projects/Storehouse.png",
     url: "https://www.figma.com/proto/jduPg8DbrCNQgYeFY03sn1/Food-Delivery-App?node-id=5-23&t=0ryoMxGtiyGiBR1D-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
     tag: ["Figma", "HIFI Prototype", "UX/UI Design"]
   },
   {
-    id: 9,
+    id: 8,
     title: "Base360 Omnichannel Landing Page Prototype",
+    category: "UX/UI Design",
     Description: "A world-class e-commerce and corporate light-mode landing page design tracking an end-to-end AI agent automation flow—from public social media comments to CRM lead conversion and automated voice outreach.",
     image: "/projects/Base360.png",
-    url: "https://www.figma.com/proto/iJTiuqFZKkx0rjbqtMMoAz/BASE360-Landing-Page?node-id=8-66&t=gMuRoEePJo4CRnPS-1&scaling=scale-down&content-scaling=fixed&page-id=8%3A65&starting-point-node-id=8%3A66",
+    url: "https://www.figma.com/proto/iJTiuqFZKkx0rjbqtMMoAz/BASE360-Landing-Page?node-id=8-66&t=d0Tim6qTam9aAWdX-1&scaling=scale-down&content-scaling=fixed&page-id=8%3A65&starting-point-node-id=8%3A66",
     tag: ["Figma", "HIFI Prototype", "UX/UI Flow", "Bento Grid", "Product Strategy"]
   }
 ];
-
 export const Projects = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredProjects =
+    activeCategory === "All"
+      ? project
+      : project.filter((proj) => proj.category === activeCategory);
+
   return (
     <section id="projects" className="py-24 px-2 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
         </h2>
-        <p className="text-center text-secondary mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-secondary mb-8 max-w-2xl mx-auto">
           Here are some projects. Each project was created with attention to detail and performance.
         </p>
-        
+
+        {/* Category Filter Bar */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          {CATEGORIES.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer ${
+                activeCategory === category
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "bg-card text-muted-foreground border border-border hover:border-primary/50 hover:text-foreground"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
         {/* Equal heights: Tailwind's grid natively forces items to have matching heights per row */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {project.map((proj, key) => {
+          {filteredProjects.map((proj) => {
             return (
-              /* 
-                1. Added 'relative' so the child pseudo-element link targets this card container boundary.
-                2. Added 'flex flex-col' to let the content inside grow smoothly to fill the container height.
-              */
-              <div 
-                key={key} 
+              <div
+                key={proj.id}
                 className="group relative flex flex-col bg-card rounded-lg overflow-hidden shadow-sm border border-border transition-all duration-300 hover:shadow-md hover:-translate-y-1"
               >
                 {/* Image Aspect Box */}
                 <div className="h-48 overflow-hidden bg-muted">
-                  <img 
-                    src={proj.image} 
-                    alt={proj.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                  <img
+                    src={proj.image}
+                    alt={proj.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
@@ -130,13 +149,16 @@ export const Projects = () => {
                   {/* Badges/Tags container */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {proj.tag.map((t, idx) => (
-                      <span key={idx} className="text-xs bg-primary/10 text-primary font-medium px-2 py-1 rounded">
+                      <span
+                        key={idx}
+                        className="text-xs bg-primary/10 text-primary font-medium px-2 py-1 rounded"
+                      >
                         {t}
                       </span>
                     ))}
                   </div>
 
-                  {/* Main Text Content: 'grow' expands this div to push the bottom link down */}
+                  {/* Main Text Content: 'grow' expands this div to push the bottom links down */}
                   <div className="grow mb-6">
                     <h3 className="font-bold text-xl tracking-tight text-card-foreground">
                       {proj.title}
@@ -145,28 +167,44 @@ export const Projects = () => {
                       {proj.Description}
                     </p>
                   </div>
-                  
+
                   {/* Bottom Actions Row */}
-                  <div className="flex items-center justify-between pt-3 border-t border-border">
-                    <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
-                      View Project
-                    </span>
-                    <a 
-                      href={proj.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-muted-foreground group-hover:text-primary transition-colors p-1"
-                    >
-                      {/* 
-                        CRITICAL: The after:absolute and after:inset-0 styles stretch an invisible overlay layer 
-                        across the parent .relative card container, making the whole card safely clickable!
-                      */}
-                      <ExternalLink 
-                        size={18} 
-                        className="after:absolute after:inset-0 after:z-10" 
-                      />
-                    </a>
-                  </div>
+                  {proj.links && proj.links.length > 0 ? (
+                    <div className="flex flex-col divide-y divide-border pt-2 border-t border-border">
+                      {proj.links.map((linkItem, idx) => (
+                        <a
+                          key={idx}
+                          href={linkItem.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group/link flex items-center justify-between py-2.5 first:pt-1 last:pb-0 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          <span>{linkItem.label}</span>
+                          <ExternalLink
+                            size={16}
+                            className="transition-transform duration-200 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5"
+                          />
+                        </a>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-between pt-3 border-t border-border">
+                      <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
+                        View Project
+                      </span>
+                      <a
+                        href={proj.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground group-hover:text-primary transition-colors p-1"
+                      >
+                        <ExternalLink
+                          size={18}
+                          className="after:absolute after:inset-0 after:z-10"
+                        />
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             );

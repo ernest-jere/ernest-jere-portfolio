@@ -47,6 +47,31 @@ const project = [
     ]
   },
   {
+    id: 7,
+    title: "StoreHouse: End-to-End Food Delivery UX/UI & React App",
+    category: "Full-Stack",
+    Description: "An end-to-end mobile-first food delivery application bridging high-fidelity Figma prototyping with production React code via a custom Node.js automation script (parse-tokens.js) that compiles Figma design variables directly into Tailwind CSS v4 @theme tokens. Features interactive category filtering, real-time search, a dynamic spice-level slider, portion steppers, toppings/sides customizers, a slide-over multi-item cart drawer, Light/Dark theme switching, and ZAR checkout with 15% VAT calculation.",
+    image: "/projects/Storehouse.png",
+    url: "https://storehouse-food-delivery.vercel.app/",
+    links: [
+      { label: "Live App", url: "https://storehouse-food-delivery.vercel.app/" },
+      { label: "Figma Prototype", url: "https://www.figma.com/proto/jduPg8DbrCNQgYeFY03sn1/Food-Delivery-App?node-id=5-23&t=EBoVUc6tpJidxfzM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" },
+      { label: "tokens.json (Figma Variables)", url: "https://github.com/ernest-jere/storehouse-food-delivery/blob/main/parse-tokens.js" },
+      { label: "parse-tokens.js (Token Compiler)", url: "https://github.com/ernest-jere/storehouse-food-delivery/blob/main/parse-tokens.js" }
+    ],
+    tag: [
+      "ReactJS",
+      "Tailwind CSS v4",
+      "Figma Variables",
+      "W3C Design Tokens",
+      "Node.js Automation",
+      "UX/UI Design",
+      "Vite",
+      "Vercel"
+    ]
+  },
+
+  {
     id: 4,
     title: "EcooGraphix Industrial Trifold Brochure",
     category: "Print Design",

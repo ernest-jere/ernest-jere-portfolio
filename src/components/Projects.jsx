@@ -65,7 +65,7 @@ const project = [
     links: [
       { label: "Live App", url: "https://storehouse-food-delivery.vercel.app/" },
       { label: "Figma Prototype", url: "https://www.figma.com/proto/jduPg8DbrCNQgYeFY03sn1/Food-Delivery-App?node-id=5-23&t=EBoVUc6tpJidxfzM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" },
-      { label: "tokens.json (Figma Variables)", url: "https://github.com/ernest-jere/storehouse-food-delivery/blob/main/parse-tokens.js" },
+      { label: "tokens.json (Figma Variables)", url: "https://github.com/ernest-jere/storehouse-food-delivery/blob/main/tokens.json" },
       { label: "parse-tokens.js (Token Compiler)", url: "https://github.com/ernest-jere/storehouse-food-delivery/blob/main/parse-tokens.js" }
     ],
     tag: [

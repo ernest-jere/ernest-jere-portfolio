@@ -24,6 +24,15 @@ const project = [
   },
   {
     id: 3,
+    title: "Impressions Autonomous Storefront Platform",
+    category: "Full-Stack",
+    Description: "A high-performance full-stack web application featuring an automated ZAR print pricing matrix switcher, background process routing (Digital/UV vs. Litho/Screen), integrated Cloudinary signatureless API file uploads, and a built-in localStorage client lead tracker workspace dashboard.",
+    image: "/projects/Impressions.png",
+    url: "https://design-print-shop.vercel.app/",
+    tag: ["React Frontend", "Tailwind v4", "Vite 8", "Automated Pricing", "Full-Stack Dev"]
+  },
+  {
+    id: 4,
     title: "InvestTrack: End-to-End Fintech UX/UI & Live Equity Dashboard",
     category: "Full-Stack",
     Description: "An end-to-end product design and full-stack engineering showcase bridging UX/UI strategy and production code. Starts from agile FigJam work breakdown structures and high-fidelity mobile prototypes in Figma, culminating in a Node.js automation pipeline that compiles Figma design variables into Tailwind CSS v4 @theme tokens. Streams live NYSE and JSE ADR market quotes via Finnhub REST API with USD/ZAR conversion, live market hours status, weighted Beta risk scoring, Sector Allocation analytics, a 7-day net worth chart, and CSV exports.",
@@ -47,7 +56,7 @@ const project = [
     ]
   },
   {
-    id: 7,
+    id: 5,
     title: "StoreHouse: End-to-End Food Delivery UX/UI & React App",
     category: "Full-Stack",
     Description: "An end-to-end mobile-first food delivery application bridging high-fidelity Figma prototyping with production React code via a custom Node.js automation script (parse-tokens.js) that compiles Figma design variables directly into Tailwind CSS v4 @theme tokens. Features interactive category filtering, real-time search, a dynamic spice-level slider, portion steppers, toppings/sides customizers, a slide-over multi-item cart drawer, Light/Dark theme switching, and ZAR checkout with 15% VAT calculation.",
@@ -72,7 +81,7 @@ const project = [
   },
 
   {
-    id: 4,
+    id: 6,
     title: "EcooGraphix Industrial Trifold Brochure",
     category: "Print Design",
     Description: "A professional 6-panel technical product brochure designed in Adobe InDesign for a global print-packaging supplier, featuring complex data tables, geographic distribution maps, and print-ready prepress layouts.",
@@ -81,31 +90,13 @@ const project = [
     tag: ["InDesign", "Print Design", "Layout", "Technical Editorial"]
   },
   {
-    id: 5,
+    id: 7,
     title: "Standard Work Procedures Book Cover Layout",
     category: "Print Design",
     Description: "A professional full-bleed book cover designed in Adobe InDesign for a technical printing industry manual, featuring structured typography, a precise multi-panel print layout, and automated spine text alignment.",
     image: "/projects/SOP Book Cover.png",
     url: "https://drive.google.com/file/d/1MyWsPTN7L5kTyuy8eayYy5PgG5MqwebH/view?usp=sharing",
     tag: ["InDesign", "Print Design", "Cover Layout", "Technical Editorial"]
-  },
-  {
-    id: 6,
-    title: "Impressions Autonomous Storefront Platform",
-    category: "Full-Stack",
-    Description: "A high-performance full-stack web application featuring an automated ZAR print pricing matrix switcher, background process routing (Digital/UV vs. Litho/Screen), integrated Cloudinary signatureless API file uploads, and a built-in localStorage client lead tracker workspace dashboard.",
-    image: "/projects/Impressions.png",
-    url: "https://design-print-shop.vercel.app/",
-    tag: ["React Frontend", "Tailwind v4", "Vite 8", "Automated Pricing", "Full-Stack Dev"]
-  },
-  {
-    id: 7,
-    title: "StoreHouse Food Delivery Prototype",
-    category: "UX/UI Design",
-    Description: "A vibrant, mobile-first food delivery application featuring custom visual branding, an interactive menu catalog, detailed spice/portion customization cards, and a seamless checkout confirmation flow.",
-    image: "/projects/Storehouse.png",
-    url: "https://www.figma.com/proto/jduPg8DbrCNQgYeFY03sn1/Food-Delivery-App?node-id=5-23&t=0ryoMxGtiyGiBR1D-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
-    tag: ["Figma", "HIFI Prototype", "UX/UI Design"]
   },
   {
     id: 8,

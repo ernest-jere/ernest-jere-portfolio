@@ -106,7 +106,49 @@ const project = [
     image: "/projects/Base360.png",
     url: "https://www.figma.com/proto/iJTiuqFZKkx0rjbqtMMoAz/BASE360-Landing-Page?node-id=8-66&t=d0Tim6qTam9aAWdX-1&scaling=scale-down&content-scaling=fixed&page-id=8%3A65&starting-point-node-id=8%3A66",
     tag: ["Figma", "HIFI Prototype", "UX/UI Flow", "Bento Grid", "Product Strategy"]
+  },
+    {
+    id: 9,
+    title: "Safari & Global Travel Booking Landing Page",
+    category: "UX/UI Design",
+    Description: "A high-contrast, dark-mode travel and safari booking landing page prototype featuring an interactive destination search bar, curated international attraction carousels with star ratings, social proof Google Reviews, a regional destination showcase grid, and key platform trust metrics.",
+    image: "/projects/Travel Website.png",
+    url: "https://www.figma.com/proto/gCDMMiiG8rCls6p1zoHuyB/Travel-Website?node-id=11-86&t=eKniqYbkCVja5E13-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+    tag: ["Figma", "HIFI Prototype", "UX/UI Design", "Dark Mode", "Landing Page"]
+  },
+  {
+    id: 10,
+    title: "Phlox Construction Corporate Landing Page & Design System",
+    category: "UX/UI Design",
+    Description: "A structured corporate construction website prototype backed by a scalable Figma Design System and reusable Component Library. Features an impactful industrial hero section, overlapping editorial photography, leadership team cards, and newsletter conversion flows.",
+    image: "/projects/Construction Landing Page.png",
+    url: "https://www.figma.com/proto/okJUXgYj9fxSu3xwZhkM8p/FCC-Project-2?node-id=173-334&t=G2HYRqJ1uxGTLqQ4-1&scaling=scale-down&content-scaling=fixed&page-id=141%3A180&starting-point-node-id=173%3A334",
+    links: [
+      {
+        label: "Figma Prototype",
+        url: "https://www.figma.com/proto/okJUXgYj9fxSu3xwZhkM8p/FCC-Project-2?node-id=173-334&t=G2HYRqJ1uxGTLqQ4-1&scaling=scale-down&content-scaling=fixed&page-id=141%3A180&starting-point-node-id=173%3A334"
+      },
+      {
+        label: "Design System",
+        url: "https://www.figma.com/design/okJUXgYj9fxSu3xwZhkM8p/FCC-Project-2?node-id=0-1&t=Hs4cBq5eHnOM3tKi-1"
+      },
+      {
+        label: "Component Library",
+        url: "https://www.figma.com/design/okJUXgYj9fxSu3xwZhkM8p/FCC-Project-2?node-id=163-63&t=Hs4cBq5eHnOM3tKi-1"
+      }
+    ],
+    tag: ["Figma", "Design System", "Component Library", "HIFI Prototype", "UX/UI Design"]
+  },
+  {
+    id: 11,
+    title: "Life Cycle of a Butterfly Educational Poster",
+    category: "Print Design",
+    Description: "A single-page educational classroom poster designed in Adobe InDesign for KS1 learners (ages 5–7). Structured with custom paragraph styles, master pages, and layered artwork to break down the four stages of butterfly metamorphosis into an engaging, easy-to-read visual sequence.",
+    image: "/projects/Butterfly Lifecycle Poster.png",
+    url: "https://drive.google.com/file/d/18eh4SQys4lGklcSqOPTts3r7ZHLQbsQd/view?usp=sharing",
+    tag: ["InDesign", "Print Design", "Educational Editorial", "Typography", "Layout"]
   }
+
 ];
 export const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");

@@ -10,7 +10,7 @@ const project = [
     category: "Full-Stack",
     Description: "A real-time cryptocurrency dashboard featuring a responsive 7-day historical price chart, live token statistics, and automated API-driven data syncing.",
     image: "/projects/Crypto Tracker.png",
-    url: "https://crypto-price-website-six.vercel.app/",    
+    url: "https://crypto-price-website-six.vercel.app/",
     tag: ["Html", "Css", "ReactJS", "Vite", "Recharts"]
   },
   {
@@ -19,7 +19,7 @@ const project = [
     category: "Full-Stack",
     Description: "A fully functional online shopping front-end application featuring product listings, detailed item views, and intuitive 'Add to Cart' functionality.",
     image: "/projects/E-commerce App.png",
-    url: "https://ecommerce-website-ernest-jere1.vercel.app",    
+    url: "https://ecommerce-website-ernest-jere1.vercel.app",
     tag: ["Html", "Css", "ReactJS", "Tailwind"]
   },
   {
@@ -39,8 +39,8 @@ const project = [
     image: "/projects/InvestTrack.png",
     url: "https://stock-investment-app-mrh1.vercel.app/",
     links: [
-      { label: "Live App", url: "https://stock-investment-app-mrh1.vercel.app/", },
-      {label: "Figma Prototype", url: "https://www.figma.com/proto/uxlO9aNtkP77XavfqRRIXA/Stock-Ivestiment-App?node-id=42-31&t=EJzK9XqFgrkYjqnv-1&scaling=scale-down&content-scaling=fixed&page-id=16%3A177&starting-point-node-id=42%3A31" },
+      { label: "Live App", url: "https://stock-investment-app-mrh1.vercel.app/" },
+      { label: "Figma Prototype", url: "https://www.figma.com/proto/uxlO9aNtkP77XavfqRRIXA/Stock-Ivestiment-App?node-id=42-31&t=EJzK9XqFgrkYjqnv-1&scaling=scale-down&content-scaling=fixed&page-id=16%3A177&starting-point-node-id=42%3A31" },
       { label: "FigJam WBS", url: "https://www.figma.com/board/whEPukfBAWv2O2Rn4yChRh/Stocks-Figjam?node-id=0-1&t=JapqsjIrpypuKNGY-1" },
       { label: "tokens.json", url: "https://github.com/ernest-jere/stock-investment-app/blob/main/design-tokens.tokens.json" }
     ],
@@ -135,19 +135,18 @@ const project = [
     category: "UX/UI Design",
     Description: "A world-class e-commerce and corporate light-mode landing page design tracking an end-to-end AI agent automation flow—from public social media comments to CRM lead conversion and automated voice outreach.",
     image: "/projects/Base360.png",
-    url: "https://www.figma.com/proto/iJTiuqFZKkx0rjbqtMMoAz/BASE360-Landing-Page?node-id=8-66&t=d0Tim6qTam9aAWdX-1&scaling=scale-down&content-scaling=fixed&page-id=8%3A65&starting-point-node-id=8%3A66",
+    url: "https://figma.com",
     tag: ["Figma", "HIFI Prototype", "UX/UI Flow", "Bento Grid", "Product Strategy"]
   },
-    {
+  {
     id: 11,
     title: "Safari & Global Travel Booking Landing Page",
     category: "UX/UI Design",
     Description: "A high-contrast, dark-mode travel and safari booking landing page prototype featuring an interactive destination search bar, curated international attraction carousels with star ratings, social proof Google Reviews, a regional destination showcase grid, and key platform trust metrics.",
     image: "/projects/Travel Website.png",
-    url: "https://www.figma.com/proto/gCDMMiiG8rCls6p1zoHuyB/Travel-Website?node-id=11-86&t=eKniqYbkCVja5E13-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+    url: "https://figma.com",
     tag: ["Figma", "HIFI Prototype", "UX/UI Design", "Dark Mode", "Landing Page"]
-  },
-  
+  }
 ];
 export const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");

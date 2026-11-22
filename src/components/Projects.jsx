@@ -79,45 +79,8 @@ const project = [
       "Vercel"
     ]
   },
-
   {
     id: 6,
-    title: "EcooGraphix Industrial Trifold Brochure",
-    category: "Print Design",
-    Description: "A professional 6-panel technical product brochure designed in Adobe InDesign for a global print-packaging supplier, featuring complex data tables, geographic distribution maps, and print-ready prepress layouts.",
-    image: "/projects/EcooGraphix Brochure.png",
-    url: "https://drive.google.com/file/d/1Z3vSJ6h9XHStd6F3zUn7ba00edoQ2leK/view?usp=sharing",
-    tag: ["InDesign", "Print Design", "Layout", "Technical Editorial"]
-  },
-  {
-    id: 7,
-    title: "Standard Work Procedures Book Cover Layout",
-    category: "Print Design",
-    Description: "A professional full-bleed book cover designed in Adobe InDesign for a technical printing industry manual, featuring structured typography, a precise multi-panel print layout, and automated spine text alignment.",
-    image: "/projects/SOP Book Cover.png",
-    url: "https://drive.google.com/file/d/1MyWsPTN7L5kTyuy8eayYy5PgG5MqwebH/view?usp=sharing",
-    tag: ["InDesign", "Print Design", "Cover Layout", "Technical Editorial"]
-  },
-  {
-    id: 8,
-    title: "Base360 Omnichannel Landing Page Prototype",
-    category: "UX/UI Design",
-    Description: "A world-class e-commerce and corporate light-mode landing page design tracking an end-to-end AI agent automation flow—from public social media comments to CRM lead conversion and automated voice outreach.",
-    image: "/projects/Base360.png",
-    url: "https://www.figma.com/proto/iJTiuqFZKkx0rjbqtMMoAz/BASE360-Landing-Page?node-id=8-66&t=d0Tim6qTam9aAWdX-1&scaling=scale-down&content-scaling=fixed&page-id=8%3A65&starting-point-node-id=8%3A66",
-    tag: ["Figma", "HIFI Prototype", "UX/UI Flow", "Bento Grid", "Product Strategy"]
-  },
-    {
-    id: 9,
-    title: "Safari & Global Travel Booking Landing Page",
-    category: "UX/UI Design",
-    Description: "A high-contrast, dark-mode travel and safari booking landing page prototype featuring an interactive destination search bar, curated international attraction carousels with star ratings, social proof Google Reviews, a regional destination showcase grid, and key platform trust metrics.",
-    image: "/projects/Travel Website.png",
-    url: "https://www.figma.com/proto/gCDMMiiG8rCls6p1zoHuyB/Travel-Website?node-id=11-86&t=eKniqYbkCVja5E13-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
-    tag: ["Figma", "HIFI Prototype", "UX/UI Design", "Dark Mode", "Landing Page"]
-  },
-  {
-    id: 10,
     title: "Phlox Construction Corporate Landing Page & Design System",
     category: "UX/UI Design",
     Description: "A structured corporate construction website prototype backed by a scalable Figma Design System and reusable Component Library. Features an impactful industrial hero section, overlapping editorial photography, leadership team cards, and newsletter conversion flows.",
@@ -140,15 +103,51 @@ const project = [
     tag: ["Figma", "Design System", "Component Library", "HIFI Prototype", "UX/UI Design"]
   },
   {
-    id: 11,
+    id: 7,
     title: "Life Cycle of a Butterfly Educational Poster",
     category: "Print Design",
     Description: "A single-page educational classroom poster designed in Adobe InDesign for KS1 learners (ages 5–7). Structured with custom paragraph styles, master pages, and layered artwork to break down the four stages of butterfly metamorphosis into an engaging, easy-to-read visual sequence.",
     image: "/projects/Butterfly Lifecycle Poster.png",
     url: "https://drive.google.com/file/d/18eh4SQys4lGklcSqOPTts3r7ZHLQbsQd/view?usp=sharing",
     tag: ["InDesign", "Print Design", "Educational Editorial", "Typography", "Layout"]
-  }
-
+  },
+  {
+    id: 8,
+    title: "EcooGraphix Industrial Trifold Brochure",
+    category: "Print Design",
+    Description: "A professional 6-panel technical product brochure designed in Adobe InDesign for a global print-packaging supplier, featuring complex data tables, geographic distribution maps, and print-ready prepress layouts.",
+    image: "/projects/EcooGraphix Brochure.png",
+    url: "https://drive.google.com/file/d/1Z3vSJ6h9XHStd6F3zUn7ba00edoQ2leK/view?usp=sharing",
+    tag: ["InDesign", "Print Design", "Layout", "Technical Editorial"]
+  },
+  {
+    id: 9,
+    title: "Standard Work Procedures Book Cover Layout",
+    category: "Print Design",
+    Description: "A professional full-bleed book cover designed in Adobe InDesign for a technical printing industry manual, featuring structured typography, a precise multi-panel print layout, and automated spine text alignment.",
+    image: "/projects/SOP Book Cover.png",
+    url: "https://drive.google.com/file/d/1MyWsPTN7L5kTyuy8eayYy5PgG5MqwebH/view?usp=sharing",
+    tag: ["InDesign", "Print Design", "Cover Layout", "Technical Editorial"]
+  },
+  {
+    id: 10,
+    title: "Base360 Omnichannel Landing Page Prototype",
+    category: "UX/UI Design",
+    Description: "A world-class e-commerce and corporate light-mode landing page design tracking an end-to-end AI agent automation flow—from public social media comments to CRM lead conversion and automated voice outreach.",
+    image: "/projects/Base360.png",
+    url: "https://www.figma.com/proto/iJTiuqFZKkx0rjbqtMMoAz/BASE360-Landing-Page?node-id=8-66&t=d0Tim6qTam9aAWdX-1&scaling=scale-down&content-scaling=fixed&page-id=8%3A65&starting-point-node-id=8%3A66",
+    tag: ["Figma", "HIFI Prototype", "UX/UI Flow", "Bento Grid", "Product Strategy"]
+  },
+    {
+    id: 11,
+    title: "Safari & Global Travel Booking Landing Page",
+    category: "UX/UI Design",
+    Description: "A high-contrast, dark-mode travel and safari booking landing page prototype featuring an interactive destination search bar, curated international attraction carousels with star ratings, social proof Google Reviews, a regional destination showcase grid, and key platform trust metrics.",
+    image: "/projects/Travel Website.png",
+    url: "https://www.figma.com/proto/gCDMMiiG8rCls6p1zoHuyB/Travel-Website?node-id=11-86&t=eKniqYbkCVja5E13-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+    tag: ["Figma", "HIFI Prototype", "UX/UI Design", "Dark Mode", "Landing Page"]
+  },
+  
 ];
 export const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
